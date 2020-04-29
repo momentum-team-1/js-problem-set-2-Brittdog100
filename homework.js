@@ -7,12 +7,9 @@
 // If the potential member is in the array, remove all instances of it from the array.
 function remove(list, member) {
     let output = [];
-    let i = 0;
     for(let m of list)
-        if(m === member)
-            continue;
-        else
-            output[i++] = m;
+        if(m != member)
+            output.push(m);
     return output;
 }
 
